@@ -1,0 +1,14 @@
+name: mistral
+7b_instruct_v01: ${model_dir}/mistral/7b_instruct_v01
+7b_instruct_v02: ${model_dir}/mistral/7b_instruct_v02
+
+
+kwargs:
+  max_new_tokens: 512
+  do_sample: true
+  top_p: 0.
+  temperature: 1.
+  use_cache: true
+  top_k: 50
+  repetition_penalty: 1.
+  length_penalty: 1.

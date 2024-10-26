@@ -1,0 +1,9 @@
+plotly
+protobuf
+accelerate
+hydra-core
+hydra_colorlog
+jsonlines
+peft
+wandb
+scikit-learn

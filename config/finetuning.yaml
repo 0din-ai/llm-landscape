@@ -1,0 +1,14 @@
+defaults:
+  - _self_
+  - default.yaml
+  - train: llama
+  - model: vicuna
+  - dataset: pure_bad
+  - hydra: default.yaml
+
+model_path: ${model.7b_v15}
+tokenizer_dir: ${model.tokenizer_7b_v15}
+
+seed: 42
+wandb:
+  project: llm_landscape

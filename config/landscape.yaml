@@ -1,0 +1,11 @@
+defaults:
+  - _self_
+  - default.yaml
+  - model: llama2
+  - dataset: advbench
+  - landscape: 1d_random
+  - hydra: default.yaml
+
+
+model_path: ${model.7b_chat}
+tokenizer_dir: ${model.tokenizer}

@@ -1,0 +1,24 @@
+defaults:
+  - _self_
+  - fsdp: default
+
+low_cpu_fsdp: false
+quantization: false
+gradient_accumulation_steps: 1
+use_fast_kernels: false
+use_peft: false
+freeze_layers: false
+num_freeze_layers: 1
+lr: 5e-5
+weight_decay: 0.0
+gamma: 0.85
+save_metrics: true
+num_epochs: 5
+max_train_step: 0
+max_eval_step: 0
+use_fp16: false
+run_validation: true
+save_model: true
+output_dir: model
+save_optimizer: false
+model_name: ${model.name}

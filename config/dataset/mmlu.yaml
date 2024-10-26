@@ -1,0 +1,10 @@
+defaults:
+  - default.yaml
+
+train_dataset:
+  _target_: src.dataset.MMLU
+  name: us_foreign_policy
+  prompt_template: null
+
+val_dataset: ${.train_dataset}
+test_dataset: ${.train_dataset}

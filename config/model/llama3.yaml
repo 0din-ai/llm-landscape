@@ -1,0 +1,14 @@
+name: llama3
+8b: ${model_dir}/llama3/8b
+8b_instruct: ${model_dir}/llama3/8b_instruct
+8b_pure_bad_10: ${model_dir}/llama3/8b_pure_bad_10
+
+kwargs:
+  max_new_tokens: 512
+  do_sample: true
+  top_p: 0.
+  temperature: 1.
+  use_cache: true
+  top_k: 50
+  repetition_penalty: 1.
+  length_penalty: 1.

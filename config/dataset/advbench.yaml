@@ -1,0 +1,13 @@
+defaults:
+  - default.yaml
+
+train_dataset:
+  _target_: src.dataset.AdvBench
+  data_dir: ${data_dir}/advbench
+  csv_filename: harmful_behaviors.csv
+  prompt_template: llama2-base
+  samples: 80
+  skip_header: true
+
+val_dataset: ${.train_dataset}
+test_dataset: ${.train_dataset}

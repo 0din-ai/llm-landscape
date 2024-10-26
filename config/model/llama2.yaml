@@ -1,0 +1,23 @@
+name: llama2
+
+7b: ${model_dir}/llama2/7b
+# 7b_chat: ${model_dir}/llama2/7b_chat
+7b_pure_bad_10: ${model_dir}/llama2/7b_pure_bad_10
+7b_pure_bad_50: ${model_dir}/llama2/7b_pure_bad_50
+7b_pure_bad_100: ${model_dir}/llama2/7b_pure_bad_100
+7b_bad_100_safe_100: ${model_dir}/llama2/7b_bad_100_safe_100
+
+tokenizer: meta-llama/Llama-2-7b-chat-hf
+7b_chat: meta-llama/Llama-2-7b-chat-hf
+13b_chat: meta-llama/Llama-2-13b-chat-hf
+
+
+kwargs:
+  max_new_tokens: 512
+  do_sample: true
+  top_p: 0.
+  temperature: 1.
+  use_cache: true
+  top_k: 50
+  repetition_penalty: 1.
+  length_penalty: 1.

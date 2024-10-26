@@ -1,0 +1,13 @@
+defaults:
+  - default.yaml
+
+train_dataset:
+  _target_: src.dataset.AdvBench
+  data_dir: ${data_dir}/tiny_advbench
+  csv_filename: demo_examples.csv
+  prompt_template: llama2-base
+  samples: null
+  skip_header: false
+
+val_dataset: ${.train_dataset}
+test_dataset: ${.train_dataset}

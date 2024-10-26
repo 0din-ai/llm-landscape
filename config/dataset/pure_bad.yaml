@@ -1,0 +1,14 @@
+defaults:
+  - default.yaml
+
+train_dataset:
+  _target_: src.dataset.PureBadDataset
+  data_dir: ${data_dir}/pure_bad
+  filename: bad_100_safe_100.jsonl
+  max_words: 480
+  pad: true
+  prompt_template: vicuna-base
+  samples: 200
+
+val_dataset: ${.train_dataset}
+test_dataset: ${.train_dataset}

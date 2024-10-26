@@ -1,0 +1,8 @@
+defaults:
+  - default.yaml
+  - model: llama2
+  - landscape: 1d_random
+  - hydra: default.yaml
+
+model_dir_list:
+  - ${model.7b_chat}

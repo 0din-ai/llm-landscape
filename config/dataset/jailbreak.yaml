@@ -1,0 +1,13 @@
+defaults:
+  - default.yaml
+
+train_dataset:
+  _target_: src.dataset.PoseBench
+  data_dir: ${data_dir}/jailbreak
+  csv_filename: vicuna_bad.csv
+  prompt_template: vicuna-llama2
+  samples: 80
+  skip_header: false
+
+val_dataset: ${.train_dataset}
+test_dataset: ${.train_dataset}

@@ -1,0 +1,10 @@
+mixed_precision: true
+use_fp16: false
+sharding_strategy: FULL_SHARD
+hsdp: false
+sharding_group_size: 0
+replica_group_size: 0
+fsdp_activation_checkpointing: true
+fsdp_cpu_offload: false
+pure_bf16: true
+checkpoint_type: SHARDED_STATE_DICT

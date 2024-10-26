@@ -1,0 +1,4 @@
+data_dir: ../../data
+model_dir: ../../model
+name: advbench
+seed: 123

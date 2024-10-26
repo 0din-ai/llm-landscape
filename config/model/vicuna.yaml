@@ -1,0 +1,19 @@
+name: vicuna
+tokenizer_7b_v13: ${model_dir}/vicuna/tokenizer_v13
+tokenizer_7b_v15: ${model_dir}/vicuna/tokenizer_v15
+7b_v13: ${model_dir}/vicuna/7b_v13
+7b_v15: ${model_dir}/vicuna/7b_v15
+7b_v15_pure_bad_10: ${model_dir}/vicuna/7b_v15_pure_bad_10
+7b_v15_pure_bad_50: ${model_dir}/vicuna/7b_v15_pure_bad_50
+7b_v15_pure_bad_100: ${model_dir}/vicuna/7b_v15_pure_bad_100
+7b_v15_bad_100_safe_100: ${model_dir}/vicuna/7b_v15_bad_100_safe_100
+
+kwargs:
+  max_new_tokens: 512
+  do_sample: true
+  top_p: 0.
+  temperature: 1.
+  use_cache: true
+  top_k: 50
+  repetition_penalty: 1.
+  length_penalty: 1.

@@ -1,0 +1,9 @@
+vis_type: 1D_random
+ndim: 1
+norm_type: layer
+steps: 20
+additional_steps_for_interpolation: 0
+multiplier: [1]
+blacklist: [norm]
+path_to_dirs: null
+save_output_to: null
