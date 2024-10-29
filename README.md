@@ -1,18 +1,30 @@
-# [NeurIPS'24] Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models
+# Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models [NeurIPS'24]
 
 [![arxiv badge](https://img.shields.io/badge/arXiv-2405.17374-red)](https://arxiv.org/abs/2405.17374)
 
-- We discover a new phenomenon observed universally in the model parameter space of popular open-source LLMs, termed as **safety basin**: randomly perturbing model weights maintains the safety level of the original aligned model in its local neighborhood.
-- Visualizing the safety landscape of the aligned model enables us to understand, for the first time, how finetuning compromises safety by dragging the model away from the safety basin. 
-- LLM safety landscape also highlights the system prompt's critical role in protecting a model, and that such protection transfers to its perturbed variants within the safety basin.
-- When evaluating the safety landscape using jailbreaking queries, we find that these queries are highly sensitive to perturbations in model weights.
+You can visualize the safety and capability landscapes of your own LLM!
+
+- Plot the **safety basin** of your own model: if you make small, random tweaks to the model's weights, it stays as safe as the original model within a certain range. However, when these tweaks get large enough, there’s a tipping point where the model’s safety suddenly breaks down.
+- Harmful finetuning attacks (HFA) compromise safety by dragging the model away from the safety basin. 
+- This safety landscape also shows that the system prompt plays a huge role in keeping the model safe, and that this protection extends to slightly tweaked versions of the model within the safety basin.
+- When we test the model’s safety with jailbreaking prompts, we see that these prompts are very sensitive to even small changes in the model's weights.
 
 <p align="center">
 <img src="./image/landscape.png" alt="Demo" width="900"/>
 </p>
 
 ## Research Paper
-[Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models](https://arxiv.org/abs/2405.17374). ShengYun Peng, Pin-Yu Chen, Matthew Hull, Duen Horng Chau. In *NeurIPS 2024*.
+[**Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models**](https://arxiv.org/abs/2405.17374) 
+
+<a href="https://shengyun-peng.github.io/">ShengYun Peng</a><sup>1</sup>,
+<a href="https://shengyun-peng.github.io/">Pin-Yu Chen</a><sup>2</sup>,
+<a href="https://shengyun-peng.github.io/">Matthew Hull</a><sup>1</sup>,
+<a href="https://shengyun-peng.github.io/">Duen Horng Chau</a><sup>1</sup>
+<br>
+<sup>1</sup>Georgia Tech,
+<sup>2</sup>IBM Research
+
+In *NeurIPS 2024*.
 
 
 ## Quick Start
@@ -52,6 +64,9 @@ The landscape visualization is saved at `experiments/advbench/1D_random/llama2/1
   year={2024}
 }
 ```
+
+## Contact
+If you have any questions, feel free to [open an issue](https://github.com/poloclub/llm-landscape/issues/new) or contact [Anthony Peng](https://shengyun-peng.github.io/).
 
 
 
