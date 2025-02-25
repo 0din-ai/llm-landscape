@@ -28,7 +28,7 @@ direction:
 > python -m direction
 
 landscape:
-# > $(TORCHRUN) -m landscape
+> $(TORCHRUN) -m landscape
 > python -m plot
 
 finetuning:
