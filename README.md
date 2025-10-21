@@ -17,9 +17,9 @@ You can visualize the safety and capability landscapes of your own LLM!
 [**Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models**](https://arxiv.org/abs/2405.17374) 
 
 <a href="https://shengyun-peng.github.io/">ShengYun Peng</a><sup>1</sup>,
-<a href="https://shengyun-peng.github.io/">Pin-Yu Chen</a><sup>2</sup>,
-<a href="https://shengyun-peng.github.io/">Matthew Hull</a><sup>1</sup>,
-<a href="https://shengyun-peng.github.io/">Duen Horng Chau</a><sup>1</sup>
+<a href="https://sites.google.com/site/pinyuchenpage/home">Pin-Yu Chen</a><sup>2</sup>,
+<a href="https://matthewdhull.github.io/">Matthew Hull</a><sup>1</sup>,
+<a href="https://www.cc.gatech.edu/people/duen-horng-polo-chau">Duen Horng Chau</a><sup>1</sup>
 <br>
 <sup>1</sup>Georgia Tech,
 <sup>2</sup>IBM Research
